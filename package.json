@@ -1,6 +1,6 @@
 {
   "name": "aws-cloudwatch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple wrapper aroung putMetricData",
   "main": "index.js",
   "scripts": {
