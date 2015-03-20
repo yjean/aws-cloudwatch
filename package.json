@@ -1,0 +1,19 @@
+{
+  "name": "aws-cloudwatch",
+  "version": "1.0.0",
+  "description": "Simple wrapper aroung putMetricData",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.fullsix.com:yoann.jean/aws-cloudwatch.git"
+  },
+  "author": "Yoann Jean <yoann.jean@gmail.com> (http://yoann.jean.free.fr)",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1.18",
+    "promise": "^6.1.0"
+  }
+}

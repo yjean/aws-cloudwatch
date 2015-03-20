@@ -1,0 +1,18 @@
+{
+  "region": "eu-west-1",
+  "namespace": "AwsCloudWatchTests",
+  "metrics": {
+    "metricNumber1": {
+      "unit": "Seconds"
+    },
+    "metricNumber2": {
+      "unit": "Count"
+    },
+    "metricNumber3": {
+      "unit": "None"
+    },
+    "metricNumber4": {
+      "unit": "Megabits"
+    }
+  }
+}
