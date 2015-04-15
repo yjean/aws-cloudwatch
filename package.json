@@ -13,7 +13,6 @@
   "author": "Yoann Jean <yoann.jean@gmail.com> (http://yoann.jean.free.fr)",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.1.18",
-    "promise": "^6.1.0"
+    "aws-sdk": "^2.1.18"
   }
 }
