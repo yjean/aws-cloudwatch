@@ -1,8 +1,6 @@
 'use strict';
 
-var AWS = require('aws-sdk'),
-    Promise = require('promise'),
-    util = require('util');
+var AWS = require('aws-sdk');
 
 var singleton = module.exports = function(config) {
   if (singleton.cloudwatch) {
@@ -12,7 +10,7 @@ var singleton = module.exports = function(config) {
   singleton.cloudwatch = new AWS.CloudWatch({region: config.region});
   singleton.metrics = config.metrics;
   singleton.put = put;
-}
+};
 
 function put(metricName) {
   if (metricName == null) {
@@ -40,7 +38,7 @@ function put(metricName) {
 function wrapper(metric, value, dimensions, callback) {
   var data = {
     MetricName: metric,
-    Timestamp: new Date,
+    Timestamp: new Date(),
     Unit: singleton.metrics[metric].unit
   };
   if (typeof(value) === 'number') {
